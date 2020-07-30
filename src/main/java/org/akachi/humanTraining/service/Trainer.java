@@ -59,17 +59,25 @@ public class Trainer {
 
         int count = 0;
         int rCount = 0;
+        boolean isRight = true;
+        Map<Integer, Symbol> theSymbolMap = null;
+        int i = -1;
         while (true) {
-            Map<Integer, Symbol> theSymbolMap = printMenu(samples, random);
+            if (isRight) {
+                theSymbolMap = printMenu(samples, random);
+            }
             printSymbol(theSymbolMap);
             count++;
-            int i = new Double((Math.random() * groupSize) + 1).intValue();//随机抽取
+            if (isRight) {
+                i = new Double((Math.random() * groupSize) + 1).intValue();//随机抽取
+            }
             Symbol symbol = theSymbolMap.get(i);
             player.playerSound(symbol.getFilePath());//播放声音
+            System.out.println("要选择新测试请输入end");
             System.out.print("请在听到语音后选择:");
             Scanner in = new Scanner(System.in);
             String s = in.nextLine();
-            if ("end".equals(s) || "quit".equals(s) || "q".equals(s) || "e".equals(s)) {
+            if ("end".equals(s) || "quit".equals(s) || "q".equals(s) || "e".equals(s) || "exit".equals(s)) {
                 break;
             } else if ("".equals(s)) {
                 break;
@@ -83,9 +91,11 @@ public class Trainer {
 
                 } else if (choose == i) {
                     System.out.println("正确！");
+                    isRight=true;
                     rCount++;
                 } else {
                     System.out.println("错误！");
+                    isRight=false;
                 }
             } catch (Exception e) {
                 e.printStackTrace();
@@ -93,7 +103,7 @@ public class Trainer {
             }
 
         }
-        return rCount / count;
+        return (rCount + 0f) / count;
     }
 
     /**
@@ -105,6 +115,9 @@ public class Trainer {
      */
     public Map<Integer, Symbol> printMenu(List<Symbol> symbolListtype, boolean random) {
         if (random) {//乱序
+            Collections.shuffle(symbolListtype);
+            Collections.shuffle(symbolListtype);
+            Collections.shuffle(symbolListtype);
             Collections.shuffle(symbolListtype);
         }
         Map<Integer, Symbol> symbolMap = new HashMap<Integer, Symbol>();
@@ -126,7 +139,7 @@ public class Trainer {
             if (i % 10 == 0) {
                 System.out.println();
             }
-            System.out.print("(" + (i + 1) + ")" + symbolMap.get(i+1).getMark());
+            System.out.print("(" + (i + 1) + ")" + symbolMap.get(i + 1).getMark());
         }
         System.out.println();
     }

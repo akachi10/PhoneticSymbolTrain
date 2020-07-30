@@ -14,13 +14,27 @@ public class Player {
     public void playerSound(@NotNull String soundSource) {
         try {
             AudioClip ac;
-            JApplet applate = new JApplet();
+//            JApplet applate = new JApplet();
 
             URL urlAudio;
             File f = new File(soundSource);
             urlAudio = f.toURL();
             ac = Applet.newAudioClip(urlAudio);
             ac.play();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void loopSound(@NotNull String soundSource) {
+        try {
+            AudioClip ac;
+
+            URL urlAudio;
+            File f = new File(soundSource);
+            urlAudio = f.toURL();
+            ac = Applet.newAudioClip(urlAudio);
+            ac.loop();
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
