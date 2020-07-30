@@ -27,6 +27,11 @@ public class AppMain {
             try {
                 int group = Integer.valueOf(groupStr);
                 int page = Integer.valueOf(pageStr);
+                if("t".equals(randomStr)||"true".equals(randomStr)){
+                    randomStr="true";
+                }else{
+                    randomStr="false";
+                }
                 boolean random = Boolean.valueOf(randomStr);
                 Trainer trainer = new Trainer(group);
                 score = trainer.randomTestTrainer(page, random);

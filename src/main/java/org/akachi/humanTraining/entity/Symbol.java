@@ -6,6 +6,7 @@ public class Symbol {
     private String typeItem;
     private String mark;
     private String filePath;
+    private String input;
 
     public int getId() {
         return id;
@@ -45,5 +46,13 @@ public class Symbol {
 
     public void setFilePath(String filePath) {
         this.filePath = filePath;
+    }
+
+    public String getInput() {
+        return input;
+    }
+
+    public void setInput(String input) {
+        this.input = input;
     }
 }

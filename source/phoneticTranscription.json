@@ -4,335 +4,383 @@
     "type": "元音",
     "typeItem": "短元音",
     "mark": "ɪ",
-    "filePath": "sound/i-sound.wav"
+    "filePath": "sound/i-sound.wav",
+    "input":"i"
   },
   {
     "id": "2",
     "type": "元音",
     "typeItem": "短元音",
     "mark": "e",
-    "filePath": "sound/e-sound.wav"
+    "filePath": "sound/e-sound.wav",
+    "input":"e"
   },
   {
     "id": "3",
     "type": "元音",
     "typeItem": "短元音",
     "mark": "ʌ",
-    "filePath": "sound/^-sound.wav"
+    "filePath": "sound/^-sound.wav",
+    "input":"^"
   },
   {
     "id": "4",
     "type": "元音",
     "typeItem": "短元音",
     "mark": "ə",
-    "filePath": "sound/e^-sound.wav"
+    "filePath": "sound/e^-sound.wav",
+    "input":"e^"
   },
   {
     "id": "5",
     "type": "元音",
     "typeItem": "短元音",
     "mark": "ɒ",
-    "filePath": "sound/o-sound.wav"
+    "filePath": "sound/o-sound.wav",
+    "input":"o-"
   },
   {
     "id": "6",
     "type": "元音",
     "typeItem": "短元音",
     "mark": "ʊ",
-    "filePath": "sound/u-sound.wav"
+    "filePath": "sound/u-sound.wav",
+    "input":"u-"
   },
   {
     "id": "7",
     "type": "元音",
     "typeItem": "短元音",
     "mark": "æ",
-    "filePath": "sound/an-sound.wav"
+    "filePath": "sound/an-sound.wav",
+    "input":"an"
   },
   {
     "id": "8",
     "type": "元音",
     "typeItem": "长元音",
     "mark": "iː",
-    "filePath": "sound/i-sound2.wav"
+    "filePath": "sound/i-sound2.wav",
+    "input":"i:"
   },
   {
     "id": "9",
     "type": "元音",
     "typeItem": "长元音",
     "mark": "ɜː",
-    "filePath": "sound/er-sound.wav"
+    "filePath": "sound/er-sound.wav",
+    "input":"er"
   },
   {
     "id": "10",
     "type": "元音",
     "typeItem": "长元音",
     "mark": "ɔː",
-    "filePath": "sound/o-sound2.wav"
+    "filePath": "sound/o-sound2.wav",
+    "input":"o:"
   },
   {
     "id": "11",
     "type": "元音",
     "typeItem": "长元音",
     "mark": "uː",
-    "filePath": "sound/u-sound2.wav"
+    "filePath": "sound/u-sound2.wav",
+    "input":"u:"
   },
   {
     "id": "12",
     "type": "元音",
     "typeItem": "长元音",
     "mark": "ɑː",
-    "filePath": "sound/a-sound2.wav"
+    "filePath": "sound/a-sound2.wav",
+    "input":"a:"
   },
   {
     "id": "13",
     "type": "元音",
     "typeItem": "双元音",
     "mark": "eɪ",
-    "filePath": "sound/ei.wav"
+    "filePath": "sound/ei.wav",
+    "input":"ei"
   },
   {
     "id": "14",
     "type": "元音",
     "typeItem": "双元音",
     "mark": "aɪ",
-    "filePath": "sound/ai.wav"
+    "filePath": "sound/ai.wav",
+    "input":"ai"
   },
   {
     "id": "15",
     "type": "元音",
     "typeItem": "双元音",
     "mark": "ɔɪ",
-    "filePath": "sound/oi.wav"
+    "filePath": "sound/oi.wav",
+    "input":"oi"
   },
   {
     "id": "16",
     "type": "元音",
     "typeItem": "双元音",
     "mark": "aʊ",
-    "filePath": "sound/ao.wav"
+    "filePath": "sound/ao.wav",
+    "input":"ao"
   },
   {
     "id": "17",
     "type": "元音",
     "typeItem": "双元音",
     "mark": "əʊ",
-    "filePath": "sound/eu.wav"
+    "filePath": "sound/eu.wav",
+    "input":"eu"
   },
   {
     "id": "18",
     "type": "元音",
     "typeItem": "双元音",
     "mark": "ɪə",
-    "filePath": "sound/ir.wav"
+    "filePath": "sound/ir.wav",
+    "input":"ir"
   },
   {
     "id": "19",
     "type": "元音",
     "typeItem": "双元音",
     "mark": "eə",
-    "filePath": "sound/er.wav"
+    "filePath": "sound/er.wav",
+    "input":"er"
   },
   {
     "id": "20",
     "type": "元音",
     "typeItem": "双元音",
     "mark": "ʊə",
-    "filePath": "sound/uer.wav"
+    "filePath": "sound/uer.wav",
+    "input":"uer"
   },
   {
     "id": "21",
     "type": "辅音",
     "typeItem": "清辅音",
     "mark": "p",
-    "filePath": "sound/p.wav"
+    "filePath": "sound/p.wav",
+    "input":"p"
   },
   {
     "id": "22",
     "type": "辅音",
     "typeItem": "清辅音",
     "mark": "t",
-    "filePath": "sound/t.wav"
+    "filePath": "sound/t.wav",
+    "input":"t"
   },
   {
     "id": "23",
     "type": "辅音",
     "typeItem": "清辅音",
     "mark": "k",
-    "filePath": "sound/k.wav"
+    "filePath": "sound/k.wav",
+    "input":"k"
   },
   {
     "id": "24",
     "type": "辅音",
     "typeItem": "清辅音",
     "mark": "f",
-    "filePath": "sound/f.wav"
+    "filePath": "sound/f.wav",
+    "input":"f"
   },
   {
     "id": "25",
     "type": "辅音",
     "typeItem": "清辅音",
     "mark": "θ",
-    "filePath": "sound/si.wav"
+    "filePath": "sound/si.wav",
+    "input":"si"
   },
   {
     "id": "26",
     "type": "辅音",
     "typeItem": "清辅音",
     "mark": "s",
-    "filePath": "sound/s.wav"
+    "filePath": "sound/s.wav",
+    "input":"s"
   },
   {
     "id": "27",
     "type": "辅音",
     "typeItem": "清辅音",
     "mark": "ts",
-    "filePath": "sound/ts.wav"
+    "filePath": "sound/ts.wav",
+    "input":"ts"
   },
   {
     "id": "28",
     "type": "辅音",
     "typeItem": "清辅音",
     "mark": "tr",
-    "filePath": "sound/tr.wav"
+    "filePath": "sound/tr.wav",
+    "input":"tr"
   },
   {
     "id": "29",
     "type": "辅音",
     "typeItem": "清辅音",
     "mark": "∫",
-    "filePath": "sound/ss.wav"
+    "filePath": "sound/ss.wav",
+    "input":"ss"
   },
   {
     "id": "30",
     "type": "辅音",
     "typeItem": "清辅音",
     "mark": "t∫",
-    "filePath": "sound/tss.wav"
+    "filePath": "sound/tss.wav",
+    "input":"tss"
   },
   {
     "id": "31",
     "type": "辅音",
     "typeItem": "浊辅音",
     "mark": "b",
-    "filePath": "sound/b.wav"
+    "filePath": "sound/b.wav",
+    "input":"b"
   },
   {
     "id": "32",
     "type": "辅音",
     "typeItem": "浊辅音",
     "mark": "d",
-    "filePath": "sound/d.wav"
+    "filePath": "sound/d.wav",
+    "input":"d"
   },
   {
     "id": "33",
     "type": "辅音",
     "typeItem": "浊辅音",
     "mark": "g",
-    "filePath": "sound/g.wav"
+    "filePath": "sound/g.wav",
+    "input":"g"
   },
   {
     "id": "34",
     "type": "辅音",
     "typeItem": "浊辅音",
     "mark": "v",
-    "filePath": "sound/v.wav"
+    "filePath": "sound/v.wav",
+    "input":"v"
   },
   {
     "id": "35",
     "type": "辅音",
     "typeItem": "浊辅音",
     "mark": "ð",
-    "filePath": "sound/qq.wav"
+    "filePath": "sound/qq.wav",
+    "input":"qq"
   },
   {
     "id": "36",
     "type": "辅音",
     "typeItem": "浊辅音",
     "mark": "z",
-    "filePath": "sound/z.wav"
+    "filePath": "sound/z.wav",
+    "input":"z"
   },
   {
     "id": "37",
     "type": "辅音",
     "typeItem": "浊辅音",
     "mark": "dz",
-    "filePath": "sound/dz.wav"
+    "filePath": "sound/dz.wav",
+    "input":"dz"
   },
   {
     "id": "38",
     "type": "辅音",
     "typeItem": "浊辅音",
     "mark": "dr",
-    "filePath": "sound/dr.wav"
+    "filePath": "sound/dr.wav",
+    "input":"dr"
   },
   {
     "id": "39",
     "type": "辅音",
     "typeItem": "浊辅音",
     "mark": "ʒ",
-    "filePath": "sound/n3.wav"
+    "filePath": "sound/n3.wav",
+    "input":"n3"
   },
   {
     "id": "40",
     "type": "辅音",
     "typeItem": "浊辅音",
     "mark": "dʒ",
-    "filePath": "sound/d3.wav"
+    "filePath": "sound/d3.wav",
+    "input":"d3"
   },
   {
     "id": "41",
     "type": "辅音",
     "typeItem": "浊辅音",
     "mark": "m",
-    "filePath": "sound/m.wav"
+    "filePath": "sound/m.wav",
+    "input":"m"
   },
   {
     "id": "42",
     "type": "辅音",
     "typeItem": "浊辅音",
     "mark": "n",
-    "filePath": "sound/n.wav"
+    "filePath": "sound/n.wav",
+    "input":"n"
   },
   {
     "id": "43",
     "type": "辅音",
     "typeItem": "浊辅音",
     "mark": "ŋ",
-    "filePath": "sound/ng.wav"
+    "filePath": "sound/ng.wav",
+    "input":"ng"
   },
   {
     "id": "44",
     "type": "辅音",
     "typeItem": "浊辅音",
     "mark": "h",
-    "filePath": "sound/h.wav"
+    "filePath": "sound/h.wav",
+    "input":"h"
   },
   {
     "id": "45",
     "type": "辅音",
     "typeItem": "浊辅音",
     "mark": "l",
-    "filePath": "sound/l.wav"
+    "filePath": "sound/l.wav",
+    "input":"l"
   },
   {
     "id": "46",
     "type": "辅音",
     "typeItem": "浊辅音",
     "mark": "r",
-    "filePath": "sound/r.wav"
+    "filePath": "sound/r.wav",
+    "input":"r"
   },
   {
     "id": "47",
     "type": "辅音",
     "typeItem": "浊辅音",
     "mark": "j",
-    "filePath": "sound/j.wav"
+    "filePath": "sound/j.wav",
+    "input":"j"
   },
   {
     "id": "48",
     "type": "辅音",
     "typeItem": "浊辅音",
     "mark": "w",
-    "filePath": "sound/w.wav"
+    "filePath": "sound/w.wav",
+    "input":"w"
   }
 ]

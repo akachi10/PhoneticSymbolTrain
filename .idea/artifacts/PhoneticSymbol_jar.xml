@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PhoneticSymbol:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/PhoneticSymbol_jar</output-path>
+    <root id="archive" name="PhoneticSymbol.jar">
+      <element id="module-output" name="PhoneticSymbol" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/directory/server/apacheds-all/2.0.0-M13/apacheds-all-2.0.0-M13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.20/lombok-1.16.20.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.3/gson-2.8.3.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

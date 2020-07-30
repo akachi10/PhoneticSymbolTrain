@@ -66,29 +66,39 @@ public class Trainer {
             if (isRight) {
                 theSymbolMap = printMenu(samples, random);
             }
+            System.out.println("###################################################################");
+            System.out.println("--------------------------每页-"+groupSize+"----第-"+page+"页--------------------------");
+            System.out.print("###################################################################");
             printSymbol(theSymbolMap);//打印选项
-            count++;
             if (isRight) {
                 i = new Double((Math.random() * groupSize) + 1).intValue();//随机抽取
             }
             Symbol symbol = theSymbolMap.get(i);
-            if (mistakeCount == 4) {
+            if (mistakeCount == 3) {
                 System.out.println(symbol.getMark() + ":是正确答案。");
             }
             player.playerSound(symbol.getFilePath());//播放声音
-            System.out.println("要选择新测试请输入end要测试下页请输入next，要测试上页请输入last");
+            System.out.println("退出:end;下页:next;上页:last;重听:回车;");
             System.out.print("请在听到语音后选择:");
             Scanner in = new Scanner(System.in);
             String s = in.nextLine();
-            if ("end".equals(s) || "quit".equals(s) || "q".equals(s) || "e".equals(s) || "exit".equals(s)) {
+            if ("end".equals(s) || "quit".equals(s) || "exit".equals(s)) {
                 break;
             } else if ("".equals(s)) {
-                break;
+                isRight = false;//重新测试
+                continue;
             } else if ("next".equals(s) || "n".equals(s)) {
                 page++;
                 continue;
             } else if("last".equals(s)||"l".equals(s)){
                 page--;
+                continue;
+            }else if(symbol.getInput().equals(s)){
+                System.out.println("正确！");
+                count++;
+                mistakeCount = 0;
+                isRight = true;
+                rCount++;
                 continue;
             }
             System.out.println();
@@ -96,20 +106,22 @@ public class Trainer {
                 int choose = Integer.parseInt(s);
                 if (choose <= 0 || choose > groupSize) {
                     System.out.println("输入超出范围请重新输入");
-                    count--;
+                    isRight = false;//重新测试
                 } else if (choose == i) {
                     System.out.println("正确！");
+                    count++;
                     mistakeCount = 0;
                     isRight = true;
                     rCount++;
                 } else {
                     System.out.println("错误！");
+                    count++;
                     mistakeCount++;
                     isRight = false;
                 }
             } catch (Exception e) {
-                e.printStackTrace();
-                break;
+                System.out.println("错误！");
+                isRight = false;
             }
 
         }
@@ -149,7 +161,7 @@ public class Trainer {
             if (i % 10 == 0) {
                 System.out.println();
             }
-            System.out.print("(" + (i + 1) + ")" + symbolMap.get(i + 1).getMark());
+            System.out.print("(" + (i + 1) + "," + symbolMap.get(i + 1).getMark()+","+symbolMap.get(i+1).getInput()+")  ");
         }
         System.out.println();
     }
