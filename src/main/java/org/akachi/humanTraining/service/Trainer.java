@@ -47,33 +47,36 @@ public class Trainer {
      * @throws IOException
      */
     public float randomTestTrainer(int page, boolean random) throws IOException {
-        if (page > 48 / groupSize) {
-            page = 48 / groupSize;
-        } else if (page < 1) {
-            page = 1;
-        }
-        int endIndex = page * groupSize;
-        int startIndex = endIndex - groupSize;
-        List<Symbol> symbols = this.getSymbols();
-        List<Symbol> samples = symbols.subList(startIndex, endIndex);//获得部分集合
-
         int count = 0;
         int rCount = 0;
+        int mistakeCount = 0;
         boolean isRight = true;
         Map<Integer, Symbol> theSymbolMap = null;
         int i = -1;
         while (true) {
+            if (page > 48 / groupSize) {
+                page = 48 / groupSize;
+            } else if (page < 1) {
+                page = 1;
+            }
+            int endIndex = page * groupSize;
+            int startIndex = endIndex - groupSize;
+            List<Symbol> symbols = this.getSymbols();
+            List<Symbol> samples = symbols.subList(startIndex, endIndex);//获得部分集合
             if (isRight) {
                 theSymbolMap = printMenu(samples, random);
             }
-            printSymbol(theSymbolMap);
+            printSymbol(theSymbolMap);//打印选项
             count++;
             if (isRight) {
                 i = new Double((Math.random() * groupSize) + 1).intValue();//随机抽取
             }
             Symbol symbol = theSymbolMap.get(i);
+            if (mistakeCount == 4) {
+                System.out.println(symbol.getMark() + ":是正确答案。");
+            }
             player.playerSound(symbol.getFilePath());//播放声音
-            System.out.println("要选择新测试请输入end");
+            System.out.println("要选择新测试请输入end要测试下页请输入next，要测试上页请输入last");
             System.out.print("请在听到语音后选择:");
             Scanner in = new Scanner(System.in);
             String s = in.nextLine();
@@ -81,6 +84,12 @@ public class Trainer {
                 break;
             } else if ("".equals(s)) {
                 break;
+            } else if ("next".equals(s) || "n".equals(s)) {
+                page++;
+                continue;
+            } else if("last".equals(s)||"l".equals(s)){
+                page--;
+                continue;
             }
             System.out.println();
             try {
@@ -88,14 +97,15 @@ public class Trainer {
                 if (choose <= 0 || choose > groupSize) {
                     System.out.println("输入超出范围请重新输入");
                     count--;
-
                 } else if (choose == i) {
                     System.out.println("正确！");
-                    isRight=true;
+                    mistakeCount = 0;
+                    isRight = true;
                     rCount++;
                 } else {
                     System.out.println("错误！");
-                    isRight=false;
+                    mistakeCount++;
+                    isRight = false;
                 }
             } catch (Exception e) {
                 e.printStackTrace();
