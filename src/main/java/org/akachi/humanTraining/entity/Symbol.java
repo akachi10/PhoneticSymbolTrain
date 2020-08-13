@@ -49,6 +49,8 @@ public class Symbol {
     }
 
     public String getInput() {
+
+
         return input;
     }
 

@@ -9,34 +9,41 @@ import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class Player {
+public class Player extends Thread{
 
-    public void playerSound(@NotNull String soundSource) {
+    private boolean isLoop = false;
+    private String filePath;
+    @Override
+    public void run() {
         try {
-            AudioClip ac;
-//            JApplet applate = new JApplet();
-
+            JApplet applate = new JApplet();
             URL urlAudio;
-            File f = new File(soundSource);
+            File f = new File(filePath);
             urlAudio = f.toURL();
-            ac = Applet.newAudioClip(urlAudio);
-            ac.play();
-        } catch (MalformedURLException e) {
+            AudioClip ac = Applet.newAudioClip(urlAudio);
+            if(isLoop) {
+                ac.loop();
+            }else{
+                ac.play();
+                Thread.sleep(2000);
+                ac.stop();
+                this.interrupt();
+            }
+        } catch (MalformedURLException | InterruptedException e) {
             e.printStackTrace();
         }
     }
 
-    public void loopSound(@NotNull String soundSource) {
-        try {
-            AudioClip ac;
+    public static void playerSound(@NotNull String soundSource) {
+        Player p = new Player();
+        p.filePath=soundSource;
+        p.start();
+    }
 
-            URL urlAudio;
-            File f = new File(soundSource);
-            urlAudio = f.toURL();
-            ac = Applet.newAudioClip(urlAudio);
-            ac.loop();
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        }
+    public static void loopSound(@NotNull String soundSource) {
+        Player p = new Player();
+        p.filePath=soundSource;
+        p.isLoop=true;
+        p.start();
     }
 }

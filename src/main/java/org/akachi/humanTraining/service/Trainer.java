@@ -20,8 +20,6 @@ public class Trainer {
         this.groupSize = groupSize;
     }
 
-    private Player player = new Player();
-
     /**
      * 获得所有音标
      *
@@ -39,8 +37,61 @@ public class Trainer {
     }
 
     /**
+     * 播放
+     * @param page
+     * @throws IOException
+     * @throws InterruptedException
+     */
+    public void playerTrain(int page,boolean write ) throws IOException, InterruptedException {
+        Map<Integer, Symbol> theSymbolMap = null;
+        while (true) {
+            if (page > 48 / groupSize) {
+                page = 48 / groupSize;
+            } else if (page < 1) {
+                page = 1;
+            }
+            int endIndex = page * groupSize;
+            int startIndex = endIndex - groupSize;
+            List<Symbol> symbols = this.getSymbols();
+            List<Symbol> samples = symbols.subList(startIndex, endIndex);//获得部分集合
+            for(Symbol sample:samples){
+                if(write) {
+                    System.out.println("接下来默写，回车查看答案" );
+                }else{
+                    System.out.println("接下来朗读:" + sample.getMark());
+                }
+                Thread.sleep(1500);
+                Player.playerSound(sample.getFilePath());
+                Thread.sleep(1500);
+
+                if(write) {
+                    Scanner in = new Scanner(System.in);
+                    String s = in.nextLine();
+                    System.out.println("答案:" + sample.getMark());
+                }
+            }
+            System.out.println("退出:end;下页:next;上页:last;重听:回车;");
+            Scanner in = new Scanner(System.in);
+            String s = in.nextLine();
+            if ("end".equals(s) || "quit".equals(s) || "exit".equals(s)) {//结束
+                break;
+            } else if ("".equals(s)) {
+                continue;
+            } else if ("next".equals(s) || "n".equals(s)) {
+                page++;
+                continue;
+            } else if("last".equals(s)||"l".equals(s)){
+                page--;
+                continue;
+            }else if(s!=null&&s.matches("[0-9]+")){
+                page = Integer.parseInt(s);
+                continue;
+            }
+        }
+    }
+
+    /**
      * 测试训练
-     *
      * @param page   训练第几页
      * @param random 是否随机训练
      * @return
@@ -74,10 +125,10 @@ public class Trainer {
                 i = new Double((Math.random() * groupSize) + 1).intValue();//随机抽取
             }
             Symbol symbol = theSymbolMap.get(i);
-            if (mistakeCount == 3) {
-                System.out.println(symbol.getMark() + ":是正确答案。");
+            if (mistakeCount >= 2) {
+                System.out.println("是正确答案是:"+symbol.getMark());
             }
-            player.playerSound(symbol.getFilePath());//播放声音
+            Player.playerSound(symbol.getFilePath());//播放声音
             System.out.println("退出:end;下页:next;上页:last;重听:回车;");
             System.out.print("请在听到语音后选择:");
             Scanner in = new Scanner(System.in);
@@ -92,6 +143,9 @@ public class Trainer {
                 continue;
             } else if("last".equals(s)||"l".equals(s)){
                 page--;
+                continue;
+            }else if(s!=null&&s.matches("[0-9]+")){
+                page = Integer.parseInt(s);
                 continue;
             }else if(symbol.getInput().equals(s)){
                 System.out.println("正确！");
@@ -121,6 +175,8 @@ public class Trainer {
                 }
             } catch (Exception e) {
                 System.out.println("错误！");
+                count++;
+                mistakeCount++;
                 isRight = false;
             }
 
@@ -153,7 +209,6 @@ public class Trainer {
 
     /**
      * 打印选项
-     *
      * @param symbolMap
      */
     private void printSymbol(Map<Integer, Symbol> symbolMap) {
