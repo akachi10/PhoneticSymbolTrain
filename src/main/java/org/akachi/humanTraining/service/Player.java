@@ -9,10 +9,11 @@ import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class Player extends Thread{
+public class Player extends Thread {
 
     private boolean isLoop = false;
     private String filePath;
+
     @Override
     public void run() {
         try {
@@ -21,9 +22,9 @@ public class Player extends Thread{
             File f = new File(filePath);
             urlAudio = f.toURL();
             AudioClip ac = Applet.newAudioClip(urlAudio);
-            if(isLoop) {
+            if (isLoop) {
                 ac.loop();
-            }else{
+            } else {
                 ac.play();
                 Thread.sleep(2000);
                 ac.stop();
@@ -36,14 +37,14 @@ public class Player extends Thread{
 
     public static void playerSound(@NotNull String soundSource) {
         Player p = new Player();
-        p.filePath=soundSource;
+        p.filePath = soundSource;
         p.start();
     }
 
     public static void loopSound(@NotNull String soundSource) {
         Player p = new Player();
-        p.filePath=soundSource;
-        p.isLoop=true;
+        p.filePath = soundSource;
+        p.isLoop = true;
         p.start();
     }
 }

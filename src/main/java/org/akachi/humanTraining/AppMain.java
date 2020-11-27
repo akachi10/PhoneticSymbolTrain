@@ -32,13 +32,13 @@ public class AppMain {
                     randomStr = "true";
                 } else if ("player".equals(randomStr) || "p".equals(randomStr)) {
                     System.out.println("开始朗读训练");
-                    trainer.playerTrain(page,false);
+                    trainer.playerTrain(page, false);
                     continue;
-                } else if("write".equals(randomStr)||"w".equals(randomStr)){
+                } else if ("write".equals(randomStr) || "w".equals(randomStr)) {
                     System.out.println("开始默写训练");
-                    trainer.playerTrain(page,true);
+                    trainer.playerTrain(page, true);
                     continue;
-                } else{
+                } else {
                     randomStr = "false";
                 }
                 System.out.println("开始测试训练");

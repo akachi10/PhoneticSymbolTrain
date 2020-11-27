@@ -5,7 +5,7 @@
     "typeItem": "短元音",
     "mark": "ɪ",
     "filePath": "sound/i-sound.wav",
-    "input":"i"
+    "input": "i"
   },
   {
     "id": "2",
@@ -13,7 +13,7 @@
     "typeItem": "短元音",
     "mark": "e",
     "filePath": "sound/e-sound.wav",
-    "input":"e"
+    "input": "e"
   },
   {
     "id": "3",
@@ -21,7 +21,7 @@
     "typeItem": "短元音",
     "mark": "ʌ",
     "filePath": "sound/^-sound.wav",
-    "input":"^"
+    "input": "^"
   },
   {
     "id": "4",
@@ -29,7 +29,7 @@
     "typeItem": "短元音",
     "mark": "ə",
     "filePath": "sound/e^-sound.wav",
-    "input":"e^"
+    "input": "e^"
   },
   {
     "id": "5",
@@ -37,7 +37,7 @@
     "typeItem": "短元音",
     "mark": "ɒ",
     "filePath": "sound/o-sound.wav",
-    "input":"o-"
+    "input": "o-"
   },
   {
     "id": "6",
@@ -45,7 +45,7 @@
     "typeItem": "短元音",
     "mark": "ʊ",
     "filePath": "sound/u-sound.wav",
-    "input":"u-"
+    "input": "u-"
   },
   {
     "id": "7",
@@ -53,7 +53,7 @@
     "typeItem": "短元音",
     "mark": "æ",
     "filePath": "sound/an-sound.wav",
-    "input":"an"
+    "input": "an"
   },
   {
     "id": "8",
@@ -61,7 +61,7 @@
     "typeItem": "长元音",
     "mark": "iː",
     "filePath": "sound/i-sound2.wav",
-    "input":"i:"
+    "input": "i:"
   },
   {
     "id": "9",
@@ -69,7 +69,7 @@
     "typeItem": "长元音",
     "mark": "ɜː",
     "filePath": "sound/er-sound.wav",
-    "input":"er"
+    "input": "er"
   },
   {
     "id": "10",
@@ -77,7 +77,7 @@
     "typeItem": "长元音",
     "mark": "ɔː",
     "filePath": "sound/o-sound2.wav",
-    "input":"o:"
+    "input": "o:"
   },
   {
     "id": "11",
@@ -85,7 +85,7 @@
     "typeItem": "长元音",
     "mark": "uː",
     "filePath": "sound/u-sound2.wav",
-    "input":"u:"
+    "input": "u:"
   },
   {
     "id": "12",
@@ -93,7 +93,7 @@
     "typeItem": "长元音",
     "mark": "ɑː",
     "filePath": "sound/a-sound2.wav",
-    "input":"a:"
+    "input": "a:"
   },
   {
     "id": "13",
@@ -101,7 +101,7 @@
     "typeItem": "双元音",
     "mark": "eɪ",
     "filePath": "sound/ei.wav",
-    "input":"ei"
+    "input": "ei"
   },
   {
     "id": "14",
@@ -109,7 +109,7 @@
     "typeItem": "双元音",
     "mark": "aɪ",
     "filePath": "sound/ai.wav",
-    "input":"ai"
+    "input": "ai"
   },
   {
     "id": "15",
@@ -117,7 +117,7 @@
     "typeItem": "双元音",
     "mark": "ɔɪ",
     "filePath": "sound/oi.wav",
-    "input":"oi"
+    "input": "oi"
   },
   {
     "id": "16",
@@ -125,7 +125,7 @@
     "typeItem": "双元音",
     "mark": "aʊ",
     "filePath": "sound/ao.wav",
-    "input":"ao"
+    "input": "ao"
   },
   {
     "id": "17",
@@ -133,7 +133,7 @@
     "typeItem": "双元音",
     "mark": "əʊ",
     "filePath": "sound/eu.wav",
-    "input":"eu"
+    "input": "eu"
   },
   {
     "id": "18",
@@ -141,7 +141,7 @@
     "typeItem": "双元音",
     "mark": "ɪə",
     "filePath": "sound/ir.wav",
-    "input":"ir"
+    "input": "ir"
   },
   {
     "id": "19",
@@ -149,7 +149,7 @@
     "typeItem": "双元音",
     "mark": "eə",
     "filePath": "sound/er.wav",
-    "input":"er"
+    "input": "er"
   },
   {
     "id": "20",
@@ -157,7 +157,7 @@
     "typeItem": "双元音",
     "mark": "ʊə",
     "filePath": "sound/uer.wav",
-    "input":"uer"
+    "input": "uer"
   },
   {
     "id": "21",
@@ -165,7 +165,7 @@
     "typeItem": "清辅音",
     "mark": "p",
     "filePath": "sound/p.wav",
-    "input":"p"
+    "input": "p"
   },
   {
     "id": "22",
@@ -173,7 +173,7 @@
     "typeItem": "清辅音",
     "mark": "t",
     "filePath": "sound/t.wav",
-    "input":"t"
+    "input": "t"
   },
   {
     "id": "23",
@@ -181,7 +181,7 @@
     "typeItem": "清辅音",
     "mark": "k",
     "filePath": "sound/k.wav",
-    "input":"k"
+    "input": "k"
   },
   {
     "id": "24",
@@ -189,7 +189,7 @@
     "typeItem": "清辅音",
     "mark": "f",
     "filePath": "sound/f.wav",
-    "input":"f"
+    "input": "f"
   },
   {
     "id": "25",
@@ -197,7 +197,7 @@
     "typeItem": "清辅音",
     "mark": "θ",
     "filePath": "sound/si.wav",
-    "input":"si"
+    "input": "si"
   },
   {
     "id": "26",
@@ -205,7 +205,7 @@
     "typeItem": "清辅音",
     "mark": "s",
     "filePath": "sound/s.wav",
-    "input":"s"
+    "input": "s"
   },
   {
     "id": "27",
@@ -213,7 +213,7 @@
     "typeItem": "清辅音",
     "mark": "ts",
     "filePath": "sound/ts.wav",
-    "input":"ts"
+    "input": "ts"
   },
   {
     "id": "28",
@@ -221,7 +221,7 @@
     "typeItem": "清辅音",
     "mark": "tr",
     "filePath": "sound/tr.wav",
-    "input":"tr"
+    "input": "tr"
   },
   {
     "id": "29",
@@ -229,7 +229,7 @@
     "typeItem": "清辅音",
     "mark": "∫",
     "filePath": "sound/ss.wav",
-    "input":"ss"
+    "input": "ss"
   },
   {
     "id": "30",
@@ -237,7 +237,7 @@
     "typeItem": "清辅音",
     "mark": "t∫",
     "filePath": "sound/tss.wav",
-    "input":"tss"
+    "input": "tss"
   },
   {
     "id": "31",
@@ -245,7 +245,7 @@
     "typeItem": "浊辅音",
     "mark": "b",
     "filePath": "sound/b.wav",
-    "input":"b"
+    "input": "b"
   },
   {
     "id": "32",
@@ -253,7 +253,7 @@
     "typeItem": "浊辅音",
     "mark": "d",
     "filePath": "sound/d.wav",
-    "input":"d"
+    "input": "d"
   },
   {
     "id": "33",
@@ -261,7 +261,7 @@
     "typeItem": "浊辅音",
     "mark": "g",
     "filePath": "sound/g.wav",
-    "input":"g"
+    "input": "g"
   },
   {
     "id": "34",
@@ -269,7 +269,7 @@
     "typeItem": "浊辅音",
     "mark": "v",
     "filePath": "sound/v.wav",
-    "input":"v"
+    "input": "v"
   },
   {
     "id": "35",
@@ -277,7 +277,7 @@
     "typeItem": "浊辅音",
     "mark": "ð",
     "filePath": "sound/qq.wav",
-    "input":"qq"
+    "input": "qq"
   },
   {
     "id": "36",
@@ -285,7 +285,7 @@
     "typeItem": "浊辅音",
     "mark": "z",
     "filePath": "sound/z.wav",
-    "input":"z"
+    "input": "z"
   },
   {
     "id": "37",
@@ -293,7 +293,7 @@
     "typeItem": "浊辅音",
     "mark": "dz",
     "filePath": "sound/dz.wav",
-    "input":"dz"
+    "input": "dz"
   },
   {
     "id": "38",
@@ -301,7 +301,7 @@
     "typeItem": "浊辅音",
     "mark": "dr",
     "filePath": "sound/dr.wav",
-    "input":"dr"
+    "input": "dr"
   },
   {
     "id": "39",
@@ -309,7 +309,7 @@
     "typeItem": "浊辅音",
     "mark": "ʒ",
     "filePath": "sound/n3.wav",
-    "input":"n3"
+    "input": "n3"
   },
   {
     "id": "40",
@@ -317,7 +317,7 @@
     "typeItem": "浊辅音",
     "mark": "dʒ",
     "filePath": "sound/d3.wav",
-    "input":"d3"
+    "input": "d3"
   },
   {
     "id": "41",
@@ -325,7 +325,7 @@
     "typeItem": "浊辅音",
     "mark": "m",
     "filePath": "sound/m.wav",
-    "input":"m"
+    "input": "m"
   },
   {
     "id": "42",
@@ -333,7 +333,7 @@
     "typeItem": "浊辅音",
     "mark": "n",
     "filePath": "sound/n.wav",
-    "input":"n"
+    "input": "n"
   },
   {
     "id": "43",
@@ -341,7 +341,7 @@
     "typeItem": "浊辅音",
     "mark": "ŋ",
     "filePath": "sound/ng.wav",
-    "input":"ng"
+    "input": "ng"
   },
   {
     "id": "44",
@@ -349,7 +349,7 @@
     "typeItem": "浊辅音",
     "mark": "h",
     "filePath": "sound/h.wav",
-    "input":"h"
+    "input": "h"
   },
   {
     "id": "45",
@@ -357,7 +357,7 @@
     "typeItem": "浊辅音",
     "mark": "l",
     "filePath": "sound/l.wav",
-    "input":"l"
+    "input": "l"
   },
   {
     "id": "46",
@@ -365,7 +365,7 @@
     "typeItem": "浊辅音",
     "mark": "r",
     "filePath": "sound/r.wav",
-    "input":"r"
+    "input": "r"
   },
   {
     "id": "47",
@@ -373,7 +373,7 @@
     "typeItem": "浊辅音",
     "mark": "j",
     "filePath": "sound/j.wav",
-    "input":"j"
+    "input": "j"
   },
   {
     "id": "48",
@@ -381,6 +381,6 @@
     "typeItem": "浊辅音",
     "mark": "w",
     "filePath": "sound/w.wav",
-    "input":"w"
+    "input": "w"
   }
 ]
