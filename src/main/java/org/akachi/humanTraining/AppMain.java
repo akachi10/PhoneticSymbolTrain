@@ -20,7 +20,7 @@ public class AppMain {
             String pageStr = in.nextLine();
             System.out.println();
             System.out.println("请选择是否乱序测试 true 乱序 false 有序 plaher 播放 write 默写");
-            String randomStr = in.nextLine();
+           String randomStr = in.nextLine();
             System.out.println();
             float score = 0;
             try {
