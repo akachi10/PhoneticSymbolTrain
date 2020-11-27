@@ -1,0 +1,1 @@
+java -jar PhoneticSymbol-1.0-SNAPSHOT.jar
